@@ -7,6 +7,10 @@ has $!actions;
 
 submethod BUILD($!parser = Log::Reader::ELF, $!actions = Log::Reader::ELF::Actions) { }
 
-method parse-log(Str() $data) is export {
+method parse(Str() $data) {
   $!parser.parse($data, actions => $!actions).made;
+}
+
+sub parse-log(Str() $data) is export {
+  Log::Reader.new.parse($data);
 }
