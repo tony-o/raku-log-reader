@@ -14,8 +14,6 @@ use Log::Reader;
 my %data = parse-log('your-log'.IO.slurp);
 
 # do something with %data<directives> and %data<rows> here
-
-# note: parse-log is a shortcut for Log::Reader.new(parser=>ELF, actions=>ELF::Actions).parse
 ```
 
 easy peasy.
