@@ -15,5 +15,6 @@
     "Log::Reader::ELF::Actions": "lib/Log/Reader/ELF/Actions.rakumod"
   },
   "source-url": "https://github.com/tony-o/raku-log-reader.git",
+  "tags": ["parse", "log", "extended log format", "web", "elf"],
   "resources": []
 }
