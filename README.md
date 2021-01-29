@@ -18,9 +18,21 @@ my %data = parse-log('your-log'.IO.slurp);
 
 easy peasy.
 
+have your own grammar/actions?
+
+```raku
+use Log::Reader;
+use Custom::Grammar;
+use Custom::Actions;
+
+my $parser = Log::Reader.new(:parser(Custom::Grammar), :actions(Custom::Actions));
+
+$parser.parse('some-file'.IO.slurp);
+```
+
 ## todo
 
-* support streams for io
+* support streams for i/o
 
 ## authors
 
