@@ -1,0 +1,19 @@
+{
+  "name":          "Log::Reader",
+  "auth":          "zef:tony-o",
+  "version":       "1",
+  "api":           "0",
+  "description":   "extended log format log parser",
+  "perl":          "6.c",
+  "license":       "Artistic-2.0",
+  "meta-version":  "0",
+  "build-depends": [],
+  "depends":       [],
+  "provides": {
+    "Log::Reader": "lib/Log/Reader.rakumod",
+    "Log::Reader::ELF": "lib/Log/Reader/ELF.rakumod",
+    "Log::Reader::ELF::Actions": "lib/Log/Reader/ELF/Actions.rakumod"
+  },
+  "source-url": "https://github.com/tony-o/raku-log-reader.git",
+  "resources": []
+}
